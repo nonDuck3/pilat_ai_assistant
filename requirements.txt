@@ -1,5 +1,5 @@
 # Google GenAI SDK
-google-genai==1.65.0
+google-genai
 
 # dotenv
 python-dotenv==1.2.1
