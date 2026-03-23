@@ -14,11 +14,11 @@ with open(prompt_file, 'r', encoding='utf-8') as file:
     base_system_prompt = file.read()
 
 # get env variables
-chroma_api_key = os.environ["CHROMADB_API_KEY"]
-tenant = os.environ["TENANT"]
-db = os.environ["DATABASE_NAME"]
-google_api_key = os.environ["GOOGLE_API_KEY"]
-google_url = os.environ["GOOGLE_URL"]
+chroma_api_key = st.secrets["CHROMADB_API_KEY"]
+tenant = st.secrets["TENANT"]
+db = st.secrets["DATABASE_NAME"]
+google_api_key = st.secrets["GOOGLE_API_KEY"]
+google_url = st.secrets["GOOGLE_URL"]
 
 google_client = OpenAI(
     api_key=google_api_key,
