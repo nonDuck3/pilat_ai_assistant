@@ -50,7 +50,7 @@ active_prompt = None
 if "pilates_suggestions" in st.session_state and st.session_state.pilates_suggestions:
     active_prompt = st.session_state.pilates_suggestions
 
-    # Reset the widget state immediatelyession_state.pilates_suggestions = None
+    # Reset the widget state immediately
     st.session_state.pilates_suggestions = None 
 
 chat_input = st.chat_input("Ready? Set? Chat with Pilat.ai!")
