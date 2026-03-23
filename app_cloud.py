@@ -17,7 +17,7 @@ with open(prompt_file, 'r', encoding='utf-8') as file:
 chroma_api_key = st.secrets["CHROMADB_API_KEY"]
 tenant = st.secrets["TENANT"]
 db = st.secrets["DATABASE_NAME"]
-google_api_key = st.secrets["GOOGLE_API_KEY"]
+google_api_key = st.secrets["GEMINI_API_KEY"]
 google_url = st.secrets["GOOGLE_URL"]
 
 google_client = OpenAI(
