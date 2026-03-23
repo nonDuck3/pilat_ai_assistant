@@ -9,7 +9,7 @@ import os
 
 load_dotenv()
 
-prompt_file = "../prompts/system_prompt.md"
+prompt_file = "prompts/system_prompt.md"
 
 with open(prompt_file, 'r', encoding='utf-8') as file:
     base_system_prompt = file.read()
