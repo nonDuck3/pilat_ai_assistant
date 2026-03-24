@@ -4,26 +4,21 @@ from src.text_retrieval_search import query_vector_store
 import streamlit as st
 from dotenv import load_dotenv
 import os
-import argparse
 from openai import OpenAI
 
 load_dotenv()
 
-prompt_file = "../prompts/system_prompt.md"
-
-parser = argparse.ArgumentParser(description="RAG-enabled LLM conversational agent with Streamlit UI.")
-parser.add_argument("collection_name", type=str, help="The name of the collection to retrieve vector embeddings")
-args = parser.parse_args()
+prompt_file = "prompts/system_prompt.md"
 
 with open(prompt_file, 'r', encoding='utf-8') as file:
     base_system_prompt = file.read()
 
 # get env variables
-chroma_api_key = os.environ["CHROMADB_API_KEY"]
-tenant = os.environ["TENANT"]
-db = os.environ["DATABASE_NAME"]
-google_api_key = os.environ["GOOGLE_API_KEY"]
-google_url = os.environ["GOOGLE_URL"]
+chroma_api_key = st.secrets["CHROMADB_API_KEY"]
+tenant = st.secrets["TENANT"]
+db = st.secrets["DATABASE_NAME"]
+google_api_key = st.secrets["GEMINI_API_KEY"]
+google_url = st.secrets["GOOGLE_URL"]
 
 google_client = OpenAI(
     api_key=google_api_key,
@@ -31,7 +26,7 @@ google_client = OpenAI(
 )
 
 client = get_vector_store_cloud_client(tenant, db, chroma_api_key)
-collection = client.get_collection(name=args.collection_name)
+collection = client.get_collection(name="pilates_guide_collection")
 
 st.set_page_config(
     page_title="Pilat.ai",
