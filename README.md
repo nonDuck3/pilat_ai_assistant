@@ -130,7 +130,7 @@ graph LR
 
 #### Clone the repository
 ```
-git clone [Pilat.ai](https://github.com/nonDuck3/pilat_ai_assistant.git)
+git clone https://github.com/nonDuck3/pilat_ai_assistant.git
 cd pilat_ai_assistant
 ```
 
