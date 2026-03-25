@@ -112,7 +112,7 @@ graph LR
 - LLM: Google Gemini and Llama3.2
 - Vector store: Chroma
 - Framework: LangChain, Streamlit
-- Language: Python 3.11+
+- Language: Python
 
 ---
 
@@ -130,8 +130,8 @@ graph LR
 
 #### Clone the repository
 ```
-- git clone [Pilat.ai](https://github.com/nonDuck3/pilat_ai_assistant.git)
-- cd pilat_ai_assistant
+git clone [Pilat.ai](https://github.com/nonDuck3/pilat_ai_assistant.git)
+cd pilat_ai_assistant
 ```
 
 #### Install dependencies
@@ -157,11 +157,9 @@ OLLAMA_URL=http://localhost:11434/api/chat
 ```
 
 ### 4. Running the Project
-- Step 1: Place your PDFs/documents in the `data/` folder and run `cli_chat.py` to chunk and split the text within your document, then generate Gemini embeddings and sync with Chroma Cloud:
+* **Step 1: Place your PDFs/documents in the `data/` folder and run `cli_chat.py` to chunk and split the text within your document, then generate Gemini embeddings and sync with Chroma Cloud:**
+    * **`python cli_chat.py `**
 
-`python cli_chat.py `
-
-Step 2: Start the UI. Launch the Streamlit dashboard:
-
-- Local LLM: `streamlit run app_local.py`
-- Cloud LLM: `streamlit run app_cloud.py`
+* **Step 2: Start the UI. Launch the Streamlit dashboard:**
+    * **Local LLM: `streamlit run app_local.py`**
+    * **Cloud LLM: `streamlit run app_cloud.py`**
