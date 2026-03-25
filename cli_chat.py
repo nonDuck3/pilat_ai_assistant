@@ -18,13 +18,13 @@ def rag_pipeline(pdf_file: str, tenant, db, chroma_api_key, collection_name: str
 def main():
     load_dotenv()
 
-    gemini_api_key = os.environ["GOOGLE_API_KEY"]
+    gemini_api_key = os.environ["GEMINI_API_KEY"]
     chroma_api_key = os.environ["CHROMADB_API_KEY"]
     tenant = os.environ["TENANT"]
     db = os.environ["DATABASE_NAME"]
 
-    if not os.environ.get("GOOGLE_API_KEY"):
-        os.environ["GOOGLE_API_KEY"] = getpass.getpass("Enter API key for Google Gemini: ")
+    if not os.environ.get("GEMINI_API_KEY"):
+        os.environ["GEMINI_API_KEY"] = getpass.getpass("Enter API key for Google Gemini: ")
 
     parser = argparse.ArgumentParser(description="RAG Pipeline: A tool to query local documents and generate answers using llama3.2.")
     parser.add_argument("pdf_file", type=str, help="The file path of the PDF that you want to process")
