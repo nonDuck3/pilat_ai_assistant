@@ -65,11 +65,11 @@ flowchart LR
 i. Local LLM + CLI
 
 ``` mermaid
-graph TD
+graph LR
     A[💻 User Types in Terminal] --> B{🔍 RAG Logic}
-    B --> C[(📁 Local Vector DB)]
+    B --> C[(🗄️ Vector DB)]
     C --> D[🧠 Local LLM]
-    D --> E[💬 Response printed in CLI]
+    D --> E[💬 Response output in CLI]
 
     subgraph "Your Machine"
     B
@@ -81,10 +81,10 @@ graph TD
 ii. Local Chatbot (Streamlit UI)
 
 ``` mermaid
-graph TD
+graph LR
     User((👤 User)) --> UI[🌐 Streamlit Browser]
     UI --> Logic{⚙️ RAG Pipeline}
-    Logic --> VDB[(📂 Local Vector DB)]
+    Logic --> VDB[(🗄️ Vector DB)]
     VDB --> LLM[🤖 Local LLM]
     LLM --> UI
 ```
@@ -92,7 +92,7 @@ graph TD
 iii. Cloud Version (Streamlit Cloud + Cloud LLM)
 
 ``` mermaid
-graph TD
+graph LR
     User((👤 User)) --> CloudUI[☁️ Streamlit Cloud]
     
     subgraph "External APIs"
@@ -109,10 +109,10 @@ graph TD
 ---
 
 ## 🧰 Tech Stack
-LLM: Google Gemini and Llama3.2
-Vector store: Chroma
-Framework: LangChain, Streamlit
-Language: Python 3.11+
+- LLM: Google Gemini and Llama3.2
+- Vector store: Chroma
+- Framework: LangChain, Streamlit
+- Language: Python 3.11+
 
 ---
 
@@ -128,17 +128,21 @@ Language: Python 3.11+
 
 ### 2. Installation
 
-# Clone the repository
-git clone [https://github.com/nonDuck3/pilat_ai_assistant.git]
-cd pilat_ai_assistant
+#### Clone the repository
+```
+- git clone [Pilat.ai](https://github.com/nonDuck3/pilat_ai_assistant.git)
+- cd pilat_ai_assistant
+```
 
-# Install dependencies
+#### Install dependencies
+```
 pip install -r requirements.txt
+```
 
 ### 3. Configuration
-Create a .env file in the root directory:
+Create a `.env` file in the root directory:
 
-# Cloud Credentials
+#### Cloud Credentials
 ```
 GEMINI_API_KEY=<your_gemini_api_key>
 CHROMADB_API_KEY=<your_chroma_cloud_key>
@@ -147,17 +151,17 @@ DATABASE_NAME=<chroma_database_name>
 GOOGLE_URL=<google_gemini_base_url>
 ```
 
-# LLM local Configuration (Ollama)
+#### LLM local Configuration (Ollama)
 ```
 OLLAMA_URL=http://localhost:11434/api/chat
 ```
 
 ### 4. Running the Project
-Step 1: Place your PDFs/documents in the data/ folder and run `cli_chat.py` to chunk and split the text within your document, then generate Gemini embeddings and sync with Chroma Cloud:
+- Step 1: Place your PDFs/documents in the `data/` folder and run `cli_chat.py` to chunk and split the text within your document, then generate Gemini embeddings and sync with Chroma Cloud:
 
 `python cli_chat.py `
 
 Step 2: Start the UI. Launch the Streamlit dashboard:
 
-Local LLM: `streamlit run app_local.py`
-Cloud LLM: `streamlit run app_cloud.py`
+- Local LLM: `streamlit run app_local.py`
+- Cloud LLM: `streamlit run app_cloud.py`
