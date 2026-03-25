@@ -157,7 +157,7 @@ OLLAMA_URL=http://localhost:11434/api/chat
 ```
 
 ### 4. Running the Project
-* **Step 1: Place your PDFs/documents in the `data/` folder and run `cli_chat.py` to chunk and split the text within your document, generates Gemini embeddings and sync with Chroma Cloud, and retrieves context:**
+* **Step 1: Place your PDFs/documents in the `data/` folder and run `cli_chat.py` to chunk and split the text within your document, generates Gemini embeddings, syncs with Chroma Cloud, and retrieves context:**
     * **```python cli_chat.py --pdf_file "/pilates.pdf" --collection_name "chroma_collection" --query_string "What is Pilates in 5 words?" --prompt_file "system_prompt.md"```**
 
 * **Step 2: Start the UI. Launch the Streamlit dashboard and run:**
