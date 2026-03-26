@@ -12,11 +12,15 @@ As a complete beginner, I struggled to:
 * This assistant became my personalized, always-available STOTT Pilates guide — grounded in official method principles, not generic advice.
 
 ## 🎯 How It Helps Beginners
-✅ Explains why each movement matters (anatomy + biomechanics)
-✅ Breaks down cues into beginner-friendly language
-✅ Suggests safe modifications based on your level
-✅ Remembers your past questions to give consistent, evolving guidance
-✅ Grounds answers in STOTT-specific materials — no hallucinated “Pilates tips”
+✅ **🧠 Explain the "why"** — anatomy + biomechanics behind each movement
+
+✅ **🗣️ Simplify cues** — translates pro jargon into beginner-friendly language
+
+✅ **🔄 Suggest safe mods** — adapts to your level and body
+
+✅ **📌 Remember context** — tracks your past questions for consistent guidance
+
+✅ **📚 STOTT-grounded** — pulls only from official materials — no made-up tips
 
 ## 🌟 Key Features
 * **Dual-Inference Engine:** Support for **Ollama** (Local) and OpenAI-compatible cloud providers.
