@@ -1,6 +1,22 @@
 # 🧘‍♀️ Pilat.ai - The Pilates Training Assistant
 
-A hybrid Retrieval-Augmented Generation (RAG) system that combines **Local/Cloud LLM inference** with the high performance of **Cloud-based Vector Embeddings**.
+A RAG-powered AI coach built specifically for beginners learning the STOTT Pilates method — designed to help me understand foundational movements, avoid common mistakes, and build confidence without overwhelming myself with advanced cues.
+
+## 💡Why I Built This
+As a complete beginner, I struggled to:
+
+* Remember which muscles to engage in each exercise
+* Interpret instructor cues like “lengthen your spine” or “activate your powerhouse”
+* Know which modifications were safe for my body type
+* Track progress without a trainer
+* This assistant became my personalized, always-available STOTT Pilates guide — grounded in official method principles, not generic advice.
+
+## 🎯 How It Helps Beginners
+✅ Explains why each movement matters (anatomy + biomechanics)
+✅ Breaks down cues into beginner-friendly language
+✅ Suggests safe modifications based on your level
+✅ Remembers your past questions to give consistent, evolving guidance
+✅ Grounds answers in STOTT-specific materials — no hallucinated “Pilates tips”
 
 ---
 
