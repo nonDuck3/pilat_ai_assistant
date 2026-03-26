@@ -18,15 +18,11 @@ As a complete beginner, I struggled to:
 ✅ Remembers your past questions to give consistent, evolving guidance
 ✅ Grounds answers in STOTT-specific materials — no hallucinated “Pilates tips”
 
----
-
 ## 🌟 Key Features
 * **Dual-Inference Engine:** Support for **Ollama** (Local) and OpenAI-compatible cloud providers.
 * **Cloud-Native Embeddings:** Leverages **Google Gemini** for high-dimensional text vectorization.
 * **Persistent Vector Store:** Integrated with **Chroma Cloud** for a scalable, always-on knowledge base.
 * **Streamlit UI:** A polished, real-time chat interface with custom persona icons and streaming responses.
-
----
 
 ## 🏗️ How it Works
 
@@ -122,15 +118,11 @@ graph LR
     API --> CloudUI
 ```
 
----
-
 ## 🧰 Tech Stack
 - LLM: Google Gemini and Llama3.2
 - Vector store: Chroma
 - Framework: LangChain, Streamlit
 - Language: Python
-
----
 
 ## 🚀 Setup & Installation
 
