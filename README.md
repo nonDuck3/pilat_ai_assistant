@@ -1,6 +1,6 @@
 # 🧘‍♀️ Pilat.ai - The Pilates Training Assistant
 
-A RAG-powered AI coach built specifically for beginners learning the STOTT Pilates method — designed to help me understand foundational movements, avoid common mistakes, and build confidence without overwhelming myself with advanced cues.
+A RAG-powered AI coach built specifically for beginners learning the STOTT Pilates method — designed to help those without any Pilates training background understand foundational movements, avoid common mistakes, and build confidence without getting overwhelming with advanced cues.
 
 ## 💡Why I Built This
 As a complete beginner, I struggled to:
